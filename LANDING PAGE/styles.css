@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    max-height: 200px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.navigation .nav-link {
+    color: #ffae42;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #ffae42;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation .nav-link:hover {
+    background-color: #ffae42;
+    color: #000;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+.hero-image {
+    max-width: 500px;
+    animation: slideInRight 1.5s ease-in-out, imageFade 5s infinite;
+}
+
+.btn {
+    color: #fff;
+    background-color: #ffae42;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d4882a;
+}
+
+.featured-on {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.featured-on h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.featured-on .logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.featured-on .logos img {
+    max-height: 50px;
+    animation: imageFade 5s infinite;
+}
+
+.luxury {
+    text-align: left;
+    padding: 50px 0;
+}
+
+.luxury h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.luxury p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.luxury .btn {
+    margin-top: 20px;
+}
+
+.luxurious {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flower {
+    max-width: 450px;
+    animation: slideInLeft 1.5s ease-in-out, imageFade 5s infinite;
+}
+
+.partation {
+    max-width: 490px;
+    display: inline;
+    margin: 30px;
+    animation: slideInRight 1.5s ease-in-out;
+}
+
+.para {
+    margin-bottom: 40px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes imageFade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
